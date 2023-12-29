@@ -1,0 +1,6 @@
+58 error Error: Command failed with exit code 128: git tag v0.24.0 -m v0.24.0
+58 error fatal: tag 'v0.24.0' already exists
+58 error     at makeError (/Users/zvn20210028/custom-html-eslint/node_modules/execa/lib/error.js:60:11)
+58 error     at handlePromise (/Users/zvn20210028/custom-html-eslint/node_modules/execa/index.js:118:26)
+58 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+58 error     at async Promise.all (index 0)
