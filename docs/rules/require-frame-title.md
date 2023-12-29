@@ -13,7 +13,7 @@ When a screen reader encounters a frame or iframe with a title attribute, it can
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-frame-title": "error",
+    "@thuutri2710/require-frame-title": "error",
   },
 };
 ```

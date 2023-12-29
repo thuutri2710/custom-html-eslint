@@ -7,7 +7,7 @@ This rule enforces the use of tag with specified attributes.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-attrs": [
+    "@thuutri2710/require-attrs": [
       "error",
       {
         tag: "svg",
@@ -27,7 +27,7 @@ This rule takes a array of object which has tag name with attribute name.
 ```js
 module.exports = {
   rules: {
-    "@html-eslint/require-attrs": [
+    "@thuutri2710/require-attrs": [
       "error",
       {
         tag: "img",

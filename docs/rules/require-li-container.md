@@ -11,7 +11,7 @@ The `<li>` tag should be contained in a parent element: `<ol>`, `<ul>` or `<menu
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-li-container": "error",
+    "@thuutri2710/require-li-container": "error",
   },
 };
 ```

@@ -7,7 +7,7 @@ This rule enforces to use `<!DOCTYPE html>` in the document.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-doctype": "error",
+    "@thuutri2710/require-doctype": "error",
   },
 };
 ```

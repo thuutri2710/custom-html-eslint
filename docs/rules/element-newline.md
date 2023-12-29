@@ -7,7 +7,7 @@ This rule enforces newlines between tags.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/element-newline": "error",
+    "@thuutri2710/element-newline": "error",
   },
 };
 ```
@@ -41,7 +41,7 @@ This rule has an object option:
 
 ```ts
 //...
-"@html-eslint/element-newline": ["error", {
+"@thuutri2710/element-newline": ["error", {
   "skip": Array<string>
 }]
 ```

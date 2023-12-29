@@ -52,7 +52,7 @@ describe("configs", () => {
       .filter(([, rule]) => {
         return rule.meta.docs.recommended;
       })
-      .map(([name]) => `@html-eslint/${name}`);
+      .map(([name]) => `@thuutri2710/${name}`);
     expect(Object.keys(RECOMMENDED_CONFIG.rules)).toEqual(
       expect.arrayContaining(recommendedRules)
     );

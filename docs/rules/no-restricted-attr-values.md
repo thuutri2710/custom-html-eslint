@@ -7,7 +7,7 @@ This rule disallows use of specified attribute values.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    '@html-eslint/no-restricted-attr-values': ["error",  {
+    '@thuutri2710/no-restricted-attr-values': ["error",  {
     attrPatterns: ["class"],
     attrValuePatterns: ["data-.*"]
     message: "\'data-x\' is restricted."
@@ -31,7 +31,7 @@ This rule takes an array of option objects, where the `attrPatterns` and `attrVa
 ```js
 module.exports = {
   "rules": {
-    "@html-eslint/no-restricted-attrs": [
+    "@thuutri2710/no-restricted-attrs": [
       "error",
       {
         attrPatterns: ["class", "alt"],

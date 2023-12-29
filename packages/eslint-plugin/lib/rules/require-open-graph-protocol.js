@@ -1,4 +1,4 @@
-const { NODE_TYPES } = require("@html-eslint/parser");
+const { NODE_TYPES } = require("@thuutri2710/parser");
 const { RULE_CATEGORY } = require("../constants");
 const { filter } = require("./utils/array");
 const { findAttr } = require("./utils/node");

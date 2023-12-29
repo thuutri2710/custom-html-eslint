@@ -7,7 +7,7 @@ This rule enforces to use lowercase for tag and attribute names.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/lowercase": "error",
+    "@thuutri2710/lowercase": "error",
   },
 };
 ```

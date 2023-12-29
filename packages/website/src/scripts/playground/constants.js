@@ -17,7 +17,7 @@ const INITIAL_HTML = `<!DOCTYPE html>
 `;
 
 const INITAIL_CONFIG = JSON.stringify(
-  { rules: { "@html-eslint/indent": "error" } },
+  { rules: { "@thuutri2710/indent": "error" } },
   null,
   2
 );

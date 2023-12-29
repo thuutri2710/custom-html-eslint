@@ -1,4 +1,4 @@
-<!-- eslint-disable @html-eslint/require-li-container -->
+<!-- eslint-disable @thuutri2710/require-li-container -->
 <div>
     <label class="nav-list-title flex">
         <content></content>
@@ -6,8 +6,9 @@
     </label>
     <ul class="pl-1 [&>li]:pl-3 [&>li]:py-[4px] [&>li]:border-l [&>li]:border-slate-300 body4 md:body5">
         <each loop="item, index in list">
-            <!-- eslint-disable-next-line @html-eslint/require-li-container -->
-            <li class="hover:border-slate-800 cursor-pointer text-black-500 hover:text-black-900" data-nav="/docs/rules/{{item[0]}}" data-nav-active="!border-slate-800 !text-slate-900">
+            <!-- eslint-disable-next-line @thuutri2710/require-li-container -->
+            <li class="hover:border-slate-800 cursor-pointer text-black-500 hover:text-black-900"
+                data-nav="/docs/rules/{{item[0]}}" data-nav-active="!border-slate-800 !text-slate-900">
                 <a href="{{item[1]}}" class="w-full no-underline inline-block">
                     {{item[0]}}
                 </a>

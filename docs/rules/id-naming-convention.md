@@ -7,7 +7,7 @@ This rule enforces consistent naming convention for `id` attribute values.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/id-naming-convention": "error",
+    "@thuutri2710/id-naming-convention": "error",
   },
 };
 ```
@@ -86,7 +86,7 @@ Examples of **incorrect** code for this rule with the `"regex"` option below:
 
 ```js
 {
-  "@html-eslint/id-naming-convention": ["error", "regex", { "pattern": "^([A-Z][a-z])+[A-Z]?$" }]
+  "@thuutri2710/id-naming-convention": ["error", "regex", { "pattern": "^([A-Z][a-z])+[A-Z]?$" }]
 }
 ```
 
@@ -98,7 +98,7 @@ Examples of **correct** code for this rule with the `"regex"` option below:
 
 ```js
 {
-  "@html-eslint/id-naming-convention": ["error", "regex", { "pattern": "^([A-Z][a-z])+[A-Z]?$" }]
+  "@thuutri2710/id-naming-convention": ["error", "regex", { "pattern": "^([A-Z][a-z])+[A-Z]?$" }]
 }
 ```
 

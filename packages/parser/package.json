@@ -1,7 +1,7 @@
 {
-  "name": "@html-eslint/parser",
-  "version": "0.24.2",
-  "description": "Parser for @html-eslint/eslint-plugin",
+  "name": "@thuutri2710/parser",
+  "version": "0.24.3",
+  "description": "Parser for @thuutri2710/eslint-plugin",
   "author": "yeonjuan",
   "homepage": "https://github.com/yeonjuan/html-eslint#readme",
   "license": "MIT",

@@ -83,7 +83,7 @@ function errorsHTML(messages, fatalMessage) {
           `${message.line}:${message.line} - ${
             message.message
           }(<a href="/docs/rules/${message.ruleId.replace(
-            "@html-eslint/",
+            "@thuutri2710/",
             ""
           )}">${message.ruleId}</a>)`
         )

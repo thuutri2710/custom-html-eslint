@@ -1,7 +1,7 @@
 const { cwd } = process;
 const { resolve } = require("path");
 const { writeFileSync } = require("fs");
-const rulesRecord = require("@html-eslint/eslint-plugin/lib/rules");
+const rulesRecord = require("@thuutri2710/eslint-plugin/lib/rules");
 const prettier = require("prettier");
 
 function generateRulesMarkdown() {

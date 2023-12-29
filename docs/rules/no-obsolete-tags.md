@@ -16,7 +16,7 @@ applet, acronym, bgsound, dir, frame, frameset, noframes, isindex, keygen, listi
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-obsolete-tags": "error",
+    "@thuutri2710/no-obsolete-tags": "error",
   },
 };
 ```

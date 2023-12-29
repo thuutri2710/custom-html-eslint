@@ -1,8 +1,8 @@
 const ESLint = require("eslint");
-const parser = require("@html-eslint/parser");
+const parser = require("@thuutri2710/parser");
 const rules = require("../lib/rules");
 
-const SCOPE = "@html-eslint";
+const SCOPE = "@thuutri2710";
 const PARSER = `${SCOPE}/parser`;
 
 function prefixPluginNameReducer(rules, [key, value]) {
@@ -35,8 +35,8 @@ describe("inline disable", () => {
         <div foo="foo" foo="foo"></div>
       `,
       {
-        "@html-eslint/no-inline-styles": "error",
-        "@html-eslint/no-duplicate-attrs": "error",
+        "@thuutri2710/no-inline-styles": "error",
+        "@thuutri2710/no-duplicate-attrs": "error",
       }
     );
     expect(result).toHaveLength(0);
@@ -52,8 +52,8 @@ describe("inline disable", () => {
         <div foo="foo" foo="foo"></div>
       `,
       {
-        "@html-eslint/no-inline-styles": "error",
-        "@html-eslint/no-duplicate-attrs": "error",
+        "@thuutri2710/no-inline-styles": "error",
+        "@thuutri2710/no-duplicate-attrs": "error",
       }
     );
     expect(result).toHaveLength(2);
@@ -62,11 +62,11 @@ describe("inline disable", () => {
   it("eslint-disable rule", () => {
     const result = linter.lint(
       `
-       <!-- eslint-disable @html-eslint/no-inline-styles -->
+       <!-- eslint-disable @thuutri2710/no-inline-styles -->
         <div style="foo"></div>
       `,
       {
-        "@html-eslint/no-inline-styles": "error",
+        "@thuutri2710/no-inline-styles": "error",
       }
     );
     expect(result).toHaveLength(0);
@@ -74,11 +74,11 @@ describe("inline disable", () => {
   it("eslint-disable-next-line rule", () => {
     const result = linter.lint(
       `
-        <!-- eslint-disable-next-line @html-eslint/require-img-alt -->
+        <!-- eslint-disable-next-line @thuutri2710/require-img-alt -->
         <img src="/some/path"></img>
       `,
       {
-        "@html-eslint/require-img-alt": "error",
+        "@thuutri2710/require-img-alt": "error",
       }
     );
     expect(result).toHaveLength(0);

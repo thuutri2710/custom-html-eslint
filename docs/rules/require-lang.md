@@ -12,7 +12,7 @@ This attribute is important for accessibility and helps browsers, search engines
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-lang": "error",
+    "@thuutri2710/require-lang": "error",
   },
 };
 ```

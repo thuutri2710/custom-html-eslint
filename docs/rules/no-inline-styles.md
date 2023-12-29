@@ -18,7 +18,7 @@ Using inline styles in HTML is generally considered bad practice for several rea
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-inline-styles": "error",
+    "@thuutri2710/no-inline-styles": "error",
   },
 };
 ```

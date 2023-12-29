@@ -7,7 +7,7 @@ This rule disallows use of abstract roles.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-abstract-roles": "error",
+    "@thuutri2710/no-abstract-roles": "error",
   },
 };
 ```

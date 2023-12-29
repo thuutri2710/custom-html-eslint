@@ -16,7 +16,7 @@ This rule enforces to use `alt` attribute in `img` tags.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-img-alt": "error",
+    "@thuutri2710/require-img-alt": "error",
   },
 };
 ```

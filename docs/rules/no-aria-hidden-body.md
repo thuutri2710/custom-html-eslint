@@ -14,7 +14,7 @@ This means that assistive technologies will not perceive any of the content with
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-aria-hidden-body": "error",
+    "@thuutri2710/no-aria-hidden-body": "error",
   },
 };
 ```

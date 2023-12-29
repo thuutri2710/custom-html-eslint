@@ -1,11 +1,11 @@
-# `@html-eslint/cli`
+# `@thuutri2710/cli`
 
 > TODO: description
 
 ## Usage
 
 ```
-const cli = require('@html-eslint/cli');
+const cli = require('@thuutri2710/cli');
 
 // TODO: DEMONSTRATE API
 ```

@@ -1,4 +1,4 @@
-# `@html-eslint/eslint-plugin`
+# `@thuutri2710/eslint-plugin`
 
 An ESLint plugin which provides lint rules for HTML.
 

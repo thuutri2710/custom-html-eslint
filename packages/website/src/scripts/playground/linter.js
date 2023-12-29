@@ -1,6 +1,6 @@
-import { parseForESLint } from "@html-eslint/parser";
-import plugin from "@html-eslint/eslint-plugin";
-import { Linter as WebLinter } from "@html-eslint/web-linter";
+import { parseForESLint } from "@thuutri2710/parser";
+import plugin from "@thuutri2710/eslint-plugin";
+import { Linter as WebLinter } from "@thuutri2710/web-linter";
 
 /**
  * @typedef {import("eslint").Linter} ESLinter;
@@ -26,7 +26,7 @@ function allRules() {
   return Object.entries(plugin.rules).reduce(
     (rules, [name, rule]) => ({
       ...rules,
-      [`@html-eslint/${name}`]: rule,
+      [`@thuutri2710/${name}`]: rule,
     }),
     {}
   );
@@ -42,7 +42,7 @@ export default class Linter {
      * @type {RulesRecord}
      */
     this._rules = {
-      "@html-eslint/indent": "error",
+      "@thuutri2710/indent": "error",
     };
     this._defineParser();
     this._defineRules();
@@ -59,7 +59,7 @@ export default class Linter {
    * @private
    */
   _defineParser() {
-    this._linter.defineParser("@html-eslint/parser", {
+    this._linter.defineParser("@thuutri2710/parser", {
       parseForESLint(code) {
         return parseForESLint(code);
       },
@@ -76,13 +76,13 @@ export default class Linter {
     try {
       let fatalMessage;
       const messages = this._linter.verify(code, {
-        parser: "@html-eslint/parser",
+        parser: "@thuutri2710/parser",
         rules: this._rules,
       });
       const { output } = this._linter.verifyAndFix(
         code,
         {
-          parser: "@html-eslint/parser",
+          parser: "@thuutri2710/parser",
           rules: this._rules,
         },
         { fix }

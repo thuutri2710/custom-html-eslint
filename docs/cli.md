@@ -8,7 +8,7 @@ title: CLI
 ## Installation
 
 ```
-$ npm install -g @html-eslint/cli
+$ npm install -g @thuutri2710/cli
 ```
 
 ## Configuration
@@ -18,11 +18,11 @@ $ npm install -g @html-eslint/cli
 ```javascript
 module.exports = {
   rules: {
-    "@html-eslint/require-lang": "error",
-    "@html-eslint/require-img-alt": "error",
-    "@html-eslint/require-doctype": "error",
-    "@html-eslint/require-title": "error",
-    "@html-eslint/no-multiple-h1": "error",
+    "@thuutri2710/require-lang": "error",
+    "@thuutri2710/require-img-alt": "error",
+    "@thuutri2710/require-doctype": "error",
+    "@thuutri2710/require-title": "error",
+    "@thuutri2710/no-multiple-h1": "error",
     // ...
   },
 };

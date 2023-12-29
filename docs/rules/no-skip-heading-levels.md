@@ -7,7 +7,7 @@ This rule disallows skipping heading levels.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-skip-heading-levels": "error",
+    "@thuutri2710/no-skip-heading-levels": "error",
   },
 };
 ```

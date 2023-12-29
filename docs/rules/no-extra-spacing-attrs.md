@@ -7,7 +7,7 @@ This rule disallows extra spaces around attributes.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-extra-spacing-attrs": "error",
+    "@thuutri2710/no-extra-spacing-attrs": "error",
   },
 };
 ```

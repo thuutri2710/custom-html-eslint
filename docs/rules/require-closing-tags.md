@@ -7,7 +7,7 @@ This rule enforces closing tag.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-closing-tags": "error",
+    "@thuutri2710/require-closing-tags": "error",
   },
 };
 ```

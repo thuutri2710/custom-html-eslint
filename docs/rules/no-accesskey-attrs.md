@@ -12,7 +12,7 @@ Inconsistencies between keyboard shortcuts and keyboard commands used by screenr
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-accesskey-attrs": "error",
+    "@thuutri2710/no-accesskey-attrs": "error",
   },
 };
 ```
