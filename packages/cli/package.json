@@ -1,6 +1,6 @@
 {
   "name": "@thuutri2710/cli",
-  "version": "0.24.5",
+  "version": "0.24.10",
   "description": "HTML-ESLint CLI",
   "author": "yeonjuan <yeonjuan93@naver.com>",
   "homepage": "https://github.com/yeonjuan/html-eslint#readme",
@@ -20,12 +20,12 @@
     "access": "public"
   },
   "dependencies": {
-    "@thuutri2710/eslint-plugin": "^0.24.5",
-    "@thuutri2710/parser": "^0.24.5",
+    "@thuutri2710/eslint-plugin": "^0.24.10",
+    "@thuutri2710/parser": "^0.24.10",
     "axios": "^1.6.2",
     "chalk": "^4.1.1",
     "eslint": "^7.27.0",
     "optionator": "^0.9.1"
   },
-  "gitHead": "2dec67403f3670c70974bb0dbd597b27d23124ac"
+  "gitHead": "0273fd6d3cc46cd3c6acc9cace8b8183a970743e"
 }

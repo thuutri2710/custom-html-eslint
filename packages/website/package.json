@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.24.5",
+  "version": "0.24.10",
   "private": true,
   "scripts": {
     "clear:cache": "rimraf ../../parcel-cache",
@@ -11,9 +11,9 @@
     "deploy": "yarn build && firebase deploy"
   },
   "dependencies": {
-    "@thuutri2710/eslint-plugin": "^0.24.5",
-    "@thuutri2710/parser": "^0.24.5",
-    "@thuutri2710/web-linter": "^0.24.5",
+    "@thuutri2710/eslint-plugin": "^0.24.10",
+    "@thuutri2710/parser": "^0.24.10",
+    "@thuutri2710/web-linter": "^0.24.10",
     "codemirror": "^5.58.3"
   },
   "devDependencies": {
