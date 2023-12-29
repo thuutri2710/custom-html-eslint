@@ -1,6 +1,6 @@
 {
   "name": "@thuutri2710/parser",
-  "version": "0.24.6",
+  "version": "0.24.7",
   "description": "Parser for @thuutri2710/eslint-plugin",
   "author": "yeonjuan",
   "homepage": "https://github.com/yeonjuan/html-eslint#readme",
@@ -40,5 +40,5 @@
   "devDependencies": {
     "typescript": "^4.9.4"
   },
-  "gitHead": "5a95ebc48a72010310c3dfa14a0c6d3a360bb398"
+  "gitHead": "2dec67403f3670c70974bb0dbd597b27d23124ac"
 }
