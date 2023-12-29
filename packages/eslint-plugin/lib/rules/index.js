@@ -34,6 +34,7 @@ const noRestrictedAttrValues = require("./no-restricted-attr-values");
 const noScriptStyleType = require("./no-script-style-type");
 const lowercase = require("./lowercase");
 const requireOpenGraphProtocol = require("./require-open-graph-protocol");
+const requireSizeAttributeImg = require("./require-size-attribute-img");
 const sortAttrs = require("./sort-attrs");
 
 module.exports = {
@@ -59,6 +60,7 @@ module.exports = {
   "no-non-scalable-viewport": noNonScalableViewport,
   "no-positive-tabindex": noPositiveTabindex,
   "require-meta-viewport": requireMetaViewport,
+  "require-size-attribute-img": requireSizeAttributeImg,
   "require-meta-charset": requireMetaCharset,
   "no-target-blank": noTargetBlank,
   "no-duplicate-attrs": noDuplicateAttrs,
