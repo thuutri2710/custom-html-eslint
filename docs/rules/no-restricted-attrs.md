@@ -7,7 +7,7 @@ This rule disallows use of specified attributes.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-restricted-attrs": [
+    "@custom-html-eslint/no-restricted-attrs": [
       "error",
       {
         tagPatterns: ["^div$", "^img$"],
@@ -34,7 +34,7 @@ This rule takes an array of option objects, where the `tagPatterns` and `attrPat
 ```js
 module.exports = {
   "rules": {
-    "@html-eslint/no-restricted-attrs": [
+    "@custom-html-eslint/no-restricted-attrs": [
       "error",
       {
         tagPatterns: ["^div$", "^img$"],

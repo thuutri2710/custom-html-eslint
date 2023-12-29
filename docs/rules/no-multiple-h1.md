@@ -7,7 +7,7 @@ This rule disallows multiple `<h1>`.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-multiple-h1": "error",
+    "@custom-html-eslint/no-multiple-h1": "error",
   },
 };
 ```

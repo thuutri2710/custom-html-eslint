@@ -1,7 +1,7 @@
 const optionator = require("optionator");
 
 module.exports = optionator({
-  prepend: "Usage: html-eslint <url> [options[",
+  prepend: "Usage: custom-html-eslint <url> [options[",
   options: [
     {
       heading: "Basic configuration",

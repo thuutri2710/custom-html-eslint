@@ -22,9 +22,9 @@
     <img src="https://codecov.io/gh/yeonjuan/html-eslint/branch/main/graph/badge.svg?token=0BVJ8GGDZ6"/>
   </a>
   <img src="https://github.com/yeonjuan/html-eslint/actions/workflows/main.yml/badge.svg?branch=main" alt="CI Badge" />
-  <img src="https://img.shields.io/npm/v/@html-eslint/eslint-plugin?color=success" alt="Version" />
-  <img src="https://img.shields.io/npm/dw/@html-eslint/eslint-plugin" alt="Downloads" />
-  <img src="https://img.shields.io/npm/l/@html-eslint/eslint-plugin?color=success" alt="License" />
+  <img src="https://img.shields.io/npm/v/@custom-html-eslint/eslint-plugin?color=success" alt="Version" />
+  <img src="https://img.shields.io/npm/dw/@custom-html-eslint/eslint-plugin" alt="Downloads" />
+  <img src="https://img.shields.io/npm/l/@custom-html-eslint/eslint-plugin?color=success" alt="License" />
 </p>
 
 ## Table of Contents

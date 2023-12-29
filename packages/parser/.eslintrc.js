@@ -1,7 +1,7 @@
 module.exports = {
   extends: ["eslint:recommended"],
   plugins: ["jest", "node"],
-  parser: "@html-eslint/parser",
+  parser: "@custom-html-eslint/parser",
   parserOptions: {
     ecmaVersion: 9,
   },

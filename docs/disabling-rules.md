@@ -14,10 +14,10 @@ Disable all rules in an entire file:
 Disable or enable specific rules in an entire file:
 
 ```html
-<!-- eslint-disable @html-eslint/no-duplicate-attrs -->
+<!-- eslint-disable @custom-html-eslint/no-duplicate-attrs -->
 <div foo="foo" foo="foo"></div>
 
-<!-- eslint-enable @html-eslint/no-duplicate-attrs  -->
+<!-- eslint-enable @custom-html-eslint/no-duplicate-attrs  -->
 <div foo="foo" foo="foo"></div>
 ```
 
@@ -31,6 +31,6 @@ Disable all rules on a specific line:
 Disable a specific rule on a specific line:
 
 ```html
-<!-- eslint-disable-next-line @html-eslint/no-duplicate-attrs -->
+<!-- eslint-disable-next-line @custom-html-eslint/no-duplicate-attrs -->
 <div foo="foo" foo="foo"></div>
 ```

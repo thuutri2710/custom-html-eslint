@@ -12,7 +12,7 @@ Violating this rule results in non-compliance with the standard.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-duplicate-attrs": "error",
+    "@custom-html-eslint/no-duplicate-attrs": "error",
   },
 };
 ```

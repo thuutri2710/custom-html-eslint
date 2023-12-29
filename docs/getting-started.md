@@ -10,13 +10,13 @@
 - npm
 
 ```console,Terminal
-npm install --save-dev eslint @html-eslint/parser @html-eslint/eslint-plugin
+npm install --save-dev eslint @custom-html-eslint/parser @custom-html-eslint/eslint-plugin
 ```
 
 - yarn
 
 ```console,Terminal
-yarn add -D eslint @html-eslint/parser @html-eslint/eslint-plugin
+yarn add -D eslint @custom-html-eslint/parser @custom-html-eslint/eslint-plugin
 ```
 
 ## Configuration
@@ -27,12 +27,12 @@ We can apply [HTML-ESLint plugin rules](rules) to only HTML files(`*.html`) by u
 ```js,.eslintrc.js
 module.exports = {
   //...
-  plugins: ["@html-eslint"],
+  plugins: ["@custom-html-eslint"],
   overrides: [
     {
       files: ["*.html"],
-      parser: "@html-eslint/parser",
-      extends: ["plugin:@html-eslint/recommended"],
+      parser: "@custom-html-eslint/parser",
+      extends: ["plugin:@custom-html-eslint/recommended"],
     },
   ],
 };

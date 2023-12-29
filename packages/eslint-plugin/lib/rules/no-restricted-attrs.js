@@ -2,7 +2,7 @@
  * @typedef {{tagPatterns: string[], attrPatterns: string[], message?: string}[]} Options
  */
 
-const { NODE_TYPES } = require("@html-eslint/parser");
+const { NODE_TYPES } = require("@custom-html-eslint/parser");
 const { RULE_CATEGORY } = require("../constants");
 
 const MESSAGE_IDS = {

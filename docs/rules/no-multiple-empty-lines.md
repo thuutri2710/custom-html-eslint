@@ -7,7 +7,7 @@ This rule disallows use of multiple empty lines.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-multiple-empty-lines": "error",
+    "@custom-html-eslint/no-multiple-empty-lines": "error",
   },
 };
 ```

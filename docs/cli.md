@@ -8,7 +8,7 @@ title: CLI
 ## Installation
 
 ```
-$ npm install -g @html-eslint/cli
+$ npm install -g @custom-html-eslint/cli
 ```
 
 ## Configuration
@@ -18,11 +18,11 @@ $ npm install -g @html-eslint/cli
 ```javascript
 module.exports = {
   rules: {
-    "@html-eslint/require-lang": "error",
-    "@html-eslint/require-img-alt": "error",
-    "@html-eslint/require-doctype": "error",
-    "@html-eslint/require-title": "error",
-    "@html-eslint/no-multiple-h1": "error",
+    "@custom-html-eslint/require-lang": "error",
+    "@custom-html-eslint/require-img-alt": "error",
+    "@custom-html-eslint/require-doctype": "error",
+    "@custom-html-eslint/require-title": "error",
+    "@custom-html-eslint/no-multiple-h1": "error",
     // ...
   },
 };
@@ -31,7 +31,7 @@ module.exports = {
 ## Run
 
 ```
-$ html-eslint https://www.example.com
+$ custom-html-eslint https://www.example.com
 ```
 
 ## Options

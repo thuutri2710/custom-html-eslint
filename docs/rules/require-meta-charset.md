@@ -14,7 +14,7 @@ This rule enforces to use `<meta charset="...">` in the `<head>`.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-meta-charset": "error",
+    "@custom-html-eslint/require-meta-charset": "error",
   },
 };
 ```

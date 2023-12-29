@@ -1,5 +1,5 @@
 {
-  "name": "@html-eslint/web-linter",
+  "name": "@custom-html-eslint/web-linter",
   "version": "0.22.0",
   "description": "",
   "private": true,

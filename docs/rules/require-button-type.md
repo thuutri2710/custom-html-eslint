@@ -7,7 +7,7 @@ This rule enforces to use of button element with a valid type attribute.(`"butto
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-button-type": "error",
+    "@custom-html-eslint/require-button-type": "error",
   },
 };
 ```

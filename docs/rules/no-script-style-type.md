@@ -14,7 +14,7 @@ Specifying below tag's `type` attributes is not necessary as HTML5 implies `text
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-script-style-type": "error",
+    "@custom-html-eslint/no-script-style-type": "error",
   },
 };
 ```

@@ -12,7 +12,7 @@ Explicitly setting the viewport properties using the `<meta name="viewport">` ta
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-meta-viewport": "error",
+    "@custom-html-eslint/require-meta-viewport": "error",
   },
 };
 ```

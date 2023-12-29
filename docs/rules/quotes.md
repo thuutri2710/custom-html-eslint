@@ -7,7 +7,7 @@ This rule enforces consistent quoting attributes with double(`"`) or single(`'`)
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/quotes": "error",
+    "@custom-html-eslint/quotes": "error",
   },
 };
 ```

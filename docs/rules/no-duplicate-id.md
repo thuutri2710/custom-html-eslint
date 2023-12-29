@@ -7,7 +7,7 @@ This rule disallows duplicate `id` attributes.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-duplicate-id": "error",
+    "@custom-html-eslint/no-duplicate-id": "error",
   },
 };
 ```

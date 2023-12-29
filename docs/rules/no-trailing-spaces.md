@@ -7,7 +7,7 @@ This rule disallows trailing white spaces at the end of lines.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-trailing-spaces": "error",
+    "@custom-html-eslint/no-trailing-spaces": "error",
   },
 };
 ```

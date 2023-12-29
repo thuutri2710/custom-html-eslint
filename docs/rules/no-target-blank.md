@@ -7,7 +7,7 @@ This rule disallows usage of unsafe `target='_blank'`.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-target-blank": "error",
+    "@custom-html-eslint/no-target-blank": "error",
   },
 };
 ```

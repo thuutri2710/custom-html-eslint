@@ -18,7 +18,7 @@ This rule enforces to use `<meta name="description" content="...">` tag in `<hea
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-meta-description": "error",
+    "@custom-html-eslint/require-meta-description": "error",
   },
 };
 ```

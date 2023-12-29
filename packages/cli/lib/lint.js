@@ -1,11 +1,11 @@
 const Linter = require("eslint").Linter;
-const htmlParser = require("@html-eslint/parser");
-const htmlPlugin = require("@html-eslint/eslint-plugin");
-const SCOPE = "@html-eslint";
+const htmlParser = require("@custom-html-eslint/parser");
+const htmlPlugin = require("@custom-html-eslint/eslint-plugin");
+const SCOPE = "@custom-html-eslint";
 
 function createESLintConfig(config) {
   return {
-    parser: "@html-eslint/parser",
+    parser: "@custom-html-eslint/parser",
     rules: config.rules,
   };
 }

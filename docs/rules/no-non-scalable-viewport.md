@@ -9,7 +9,7 @@ The `user-scalable=no` disables zooming on a page. It makes users with partial v
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-non-scalable-viewport": "error",
+    "@custom-html-eslint/no-non-scalable-viewport": "error",
   },
 };
 ```

@@ -7,7 +7,7 @@ This rule enforces to use specified meta tags for open graph protocol.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-open-graph-protocol": "error",
+    "@custom-html-eslint/require-open-graph-protocol": "error",
   },
 };
 ```

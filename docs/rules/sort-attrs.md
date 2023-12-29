@@ -7,7 +7,7 @@ This rule enforces attributes alphabetical sorting.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/sort-attrs": "error",
+    "@custom-html-eslint/sort-attrs": "error",
   },
 };
 ```
@@ -30,7 +30,7 @@ Examples of **correct** code for this rule:
 
 ```ts
 //...
-"@html-eslint/sort-attrs": ["error", {
+"@custom-html-eslint/sort-attrs": ["error", {
   "priority": Array<string>
 }]
 ```

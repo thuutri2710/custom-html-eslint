@@ -7,7 +7,7 @@ This rule enforces consistent indentation.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/indent": "error",
+    "@custom-html-eslint/indent": "error",
   },
 };
 ```
@@ -18,7 +18,7 @@ module.exports = {
 
 ```ts
 //...
-"@html-eslint/indent": ["error", "tab" | number]
+"@custom-html-eslint/indent": ["error", "tab" | number]
 ```
 
 This rule has two options.
@@ -49,7 +49,7 @@ If the option is number it means the number of spaces for indentation.
 
 ```json
 {
-  "@html-eslint/indent": ["error", 2]
+  "@custom-html-eslint/indent": ["error", 2]
 }
 ```
 
@@ -76,7 +76,7 @@ If the option is `"tab"` it means using `tab` for indentation.
 
 ```json
 {
-  "@html-eslint/indent": ["error", "tab"]
+  "@custom-html-eslint/indent": ["error", "tab"]
 }
 ```
 

@@ -16,7 +16,7 @@ This rule enforces to use `<title>` tag in `<head>`.
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/require-title": "error",
+    "@custom-html-eslint/require-title": "error",
   },
 };
 ```

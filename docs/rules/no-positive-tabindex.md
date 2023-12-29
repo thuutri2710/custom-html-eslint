@@ -15,7 +15,7 @@ Setting explicit `tabindex` values should be used sparingly and only when there'
 ```js,.eslintrc.js
 module.exports = {
   rules: {
-    "@html-eslint/no-positive-tabindex": "error",
+    "@custom-html-eslint/no-positive-tabindex": "error",
   },
 };
 ```
