@@ -59,7 +59,8 @@ module.exports = {
             )
           ).length > 0;
 
-        if (!hasHighFetchPriorityAttribute) {
+        console.log(node);
+        if (!hasHighFetchPriorityAttribute && imgNodes.length > 0) {
           context.report({
             node: {
               loc: {
