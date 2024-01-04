@@ -45,41 +45,48 @@ module.exports = {
 
     return {
       Program(node) {
-        console.log(node);
-      },
-      Tag(node) {
-        if (node.name !== "img") {
-          return;
-        }
+        travelNode(node, (node) => {
+          if (node.type !== "Tag" || node.name !== "img") {
+            return;
+          }
 
-        imgNodes.push(node);
-        const hasHighFetchPriorityAttribute =
-          imgNodes.filter((imgNode) =>
-            imgNode.attributes.find(
-              (attr) =>
-                attr.key.value === "fetchPriority" &&
-                attr.value.value === "high"
-            )
-          ).length > 0;
+          imgNodes.push(node);
+          const hasHighFetchPriorityAttribute =
+            imgNodes.filter((imgNode) =>
+              imgNode.attributes.find(
+                (attr) =>
+                  attr.key.value === "fetchPriority" &&
+                  attr.value.value === "high"
+              )
+            ).length > 0;
 
-        if (!hasHighFetchPriorityAttribute && isFirstImgTag) {
-          context.report({
-            node: {
-              loc: {
-                start: imgNodes[0].openStart.loc.start,
-                end: imgNodes[0].openEnd.loc.end,
+          if (!hasHighFetchPriorityAttribute && isFirstImgTag) {
+            context.report({
+              node: {
+                loc: {
+                  start: imgNodes[0].openStart.loc.start,
+                  end: imgNodes[0].openEnd.loc.end,
+                },
+                range: [
+                  imgNodes[0].openStart.range[0],
+                  imgNodes[0].openEnd.range[1],
+                ],
               },
-              range: [
-                imgNodes[0].openStart.range[0],
-                imgNodes[0].openEnd.range[1],
-              ],
-            },
-            messageId: MESSAGE_IDS.WARNING_USE_FETCH_PRIORITY,
-          });
-        }
+              messageId: MESSAGE_IDS.WARNING_USE_FETCH_PRIORITY,
+            });
+          }
 
-        isFirstImgTag = false;
+          isFirstImgTag = false;
+        });
       },
     };
   },
 };
+
+function travelNode(node, callback) {
+  callback(node);
+
+  if (node.children && node.children.length) {
+    node.children.forEach((child) => travelNode(child, callback));
+  }
+}
