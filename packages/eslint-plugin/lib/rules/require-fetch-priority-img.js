@@ -44,6 +44,9 @@ module.exports = {
     let isFirstImgTag = true;
 
     return {
+      Program(node) {
+        console.log(node);
+      },
       Tag(node) {
         if (node.name !== "img") {
           return;
