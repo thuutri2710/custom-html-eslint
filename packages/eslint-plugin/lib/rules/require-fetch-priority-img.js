@@ -54,6 +54,8 @@ module.exports = {
           }
         });
 
+        console.log(imgNodes);
+
         const hasHighFetchPriorityAttribute =
           imgNodes.filter((imgNode) =>
             imgNode.attributes.find(
