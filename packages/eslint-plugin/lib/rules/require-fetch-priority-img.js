@@ -82,8 +82,8 @@ module.exports = {
 function travelNode(node, callback) {
   callback(node);
 
+  console.log(node.children?.length, node.children?.[0]);
   console.log("object");
-  console.log(node.children.length, node.children[0]);
   if (node.children && node.children.length) {
     node.children.forEach((child) => travelNode(child, callback));
   }
