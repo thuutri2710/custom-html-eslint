@@ -41,43 +41,39 @@ module.exports = {
 
   create(context) {
     const imgNodes = [];
-    let isFirstImgTag = true;
 
     return {
       Program(node) {
         travelNode(node, (node) => {
-          if (node.type !== "Tag" || node.name !== "img") {
-            return;
-          }
-
-          imgNodes.push(node);
-          const hasHighFetchPriorityAttribute =
-            imgNodes.filter((imgNode) =>
-              imgNode.attributes.find(
-                (attr) =>
-                  attr.key.value === "fetchPriority" &&
-                  attr.value.value === "high"
-              )
-            ).length > 0;
-
-          if (!hasHighFetchPriorityAttribute && isFirstImgTag) {
-            context.report({
-              node: {
-                loc: {
-                  start: imgNodes[0].openStart.loc.start,
-                  end: imgNodes[0].openEnd.loc.end,
-                },
-                range: [
-                  imgNodes[0].openStart.range[0],
-                  imgNodes[0].openEnd.range[1],
-                ],
-              },
-              messageId: MESSAGE_IDS.WARNING_USE_FETCH_PRIORITY,
-            });
-
-            isFirstImgTag = false;
+          if (node.type === "Tag" && node.name === "img") {
+            imgNodes.push(node);
           }
         });
+
+        const hasHighFetchPriorityAttribute =
+          imgNodes.filter((imgNode) =>
+            imgNode.attributes.find(
+              (attr) =>
+                attr.key.value === "fetchPriority" &&
+                attr.value.value === "high"
+            )
+          ).length > 0;
+
+        if (!hasHighFetchPriorityAttribute) {
+          context.report({
+            node: {
+              loc: {
+                start: imgNodes[0].openStart.loc.start,
+                end: imgNodes[0].openEnd.loc.end,
+              },
+              range: [
+                imgNodes[0].openStart.range[0],
+                imgNodes[0].openEnd.range[1],
+              ],
+            },
+            messageId: MESSAGE_IDS.WARNING_USE_FETCH_PRIORITY,
+          });
+        }
       },
     };
   },
