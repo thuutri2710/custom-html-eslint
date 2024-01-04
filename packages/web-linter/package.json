@@ -1,6 +1,6 @@
 {
   "name": "@thuutri2710/web-linter",
-  "version": "0.25.12",
+  "version": "0.25.13",
   "description": "",
   "private": true,
   "main": "out/output.js",
