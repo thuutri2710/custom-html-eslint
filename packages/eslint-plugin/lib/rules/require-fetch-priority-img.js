@@ -59,7 +59,6 @@ module.exports = {
             )
           ).length > 0;
 
-        console.log(node);
         if (!hasHighFetchPriorityAttribute && imgNodes.length > 0) {
           context.report({
             node: {
@@ -84,6 +83,7 @@ function travelNode(node, callback) {
   callback(node);
 
   if (node.children && node.children.length) {
+    console.log(node);
     node.children.forEach((child) => travelNode(child, callback));
   }
 }
