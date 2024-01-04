@@ -3,6 +3,6 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.25.19",
+  "version": "0.25.20",
   "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }
