@@ -83,8 +83,8 @@ function travelNode(node, callback) {
   callback(node);
 
   console.log("object");
+  console.log(node.children.length, node.children[0]);
   if (node.children && node.children.length) {
-    console.log(node.children.length, node.children[0]);
     node.children.forEach((child) => travelNode(child, callback));
   }
 }
