@@ -1,6 +1,6 @@
 {
   "name": "@thuutri2710/eslint-plugin",
-  "version": "0.25.20",
+  "version": "0.25.21",
   "description": "ESLint plugin for html",
   "author": "yeonjuan",
   "homepage": "https://github.com/yeonjuan/html-eslint#readme",
@@ -41,7 +41,7 @@
     "accessibility"
   ],
   "devDependencies": {
-    "@thuutri2710/parser": "^0.25.20",
+    "@thuutri2710/parser": "^0.25.21",
     "@types/eslint": "^7.2.10",
     "@types/estree": "^0.0.47",
     "es-html-parser": "^0.0.8",
