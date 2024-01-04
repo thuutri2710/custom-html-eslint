@@ -32,7 +32,8 @@ module.exports = {
       },
     ],
     messages: {
-      [MESSAGE_IDS.MISSING_SIZE]: "Missing `alt` attribute at `<img>` tag",
+      [MESSAGE_IDS.MISSING_SIZE]:
+        "Require `height` and `width` attribute at `<img>` tag",
     },
   },
 

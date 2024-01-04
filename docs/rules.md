@@ -23,7 +23,7 @@
 | [require-doctype](rules/require-doctype)                       | Require `<!DOCTYPE HTML>` in html,                           | ⭐🔧 |
 | [require-li-container](rules/require-li-container)             | Enforce `<li>` to be in `<ul>`, `<ol>` or `<menu>`.          | ⭐   |
 | [require-meta-charset](rules/require-meta-charset)             | Enforce to use `<meta charset="...">` in `<head>`            |      |
-| [require-size-attribute-img](rules/require-size-attribute-img) | Require `height` and `width` attribute at `<img>` tag        |      |
+| [require-size-attribute-img](rules/require-size-attribute-img) | Require `height` and `width` attribute at `<img>` tag        | ⭐   |
 
 ## SEO
 
