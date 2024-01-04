@@ -36,6 +36,7 @@ const lowercase = require("./lowercase");
 const requireOpenGraphProtocol = require("./require-open-graph-protocol");
 const requireSizeAttributeImg = require("./require-size-attribute-img");
 const sortAttrs = require("./sort-attrs");
+const requireFetchPriorityImg = require("./require-fetch-priority-img");
 
 module.exports = {
   "require-lang": requireLang,
@@ -61,6 +62,7 @@ module.exports = {
   "no-positive-tabindex": noPositiveTabindex,
   "require-meta-viewport": requireMetaViewport,
   "require-size-attribute-img": requireSizeAttributeImg,
+  "require-fetch-priority-img": requireFetchPriorityImg,
   "require-meta-charset": requireMetaCharset,
   "no-target-blank": noTargetBlank,
   "no-duplicate-attrs": noDuplicateAttrs,

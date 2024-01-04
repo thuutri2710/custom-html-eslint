@@ -3,6 +3,7 @@ module.exports = {
     "@thuutri2710/require-lang": "error",
     "@thuutri2710/require-img-alt": "error",
     "@thuutri2710/require-size-attribute-img": "warn",
+    "@thuutri2710/require-fetch-priority-img": "warn",
     "@thuutri2710/require-doctype": "error",
     "@thuutri2710/require-title": "error",
     "@thuutri2710/no-multiple-h1": "error",
