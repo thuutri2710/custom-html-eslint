@@ -61,9 +61,12 @@ module.exports = {
             node: {
               loc: {
                 start: imgNodes[0].openStart.loc.start,
-                end: noimgNodes[0]de.openEnd.loc.end,
+                end: imgNodes[0].openEnd.loc.end,
               },
-              range: [imgNodes[0].openStart.range[0], imgNodes[0].openEnd.range[1]],
+              range: [
+                imgNodes[0].openStart.range[0],
+                imgNodes[0].openEnd.range[1],
+              ],
             },
             messageId: MESSAGE_IDS.WARNING_USE_FETCH_PRIORITY,
           });
@@ -72,4 +75,3 @@ module.exports = {
     };
   },
 };
-
