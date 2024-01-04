@@ -46,6 +46,7 @@ module.exports = {
       Program(node) {
         travelNode(node.body, (node) => {
           if (node.type === "Tag" && node.name === "img") {
+            console.log(node);
             imgNodes.push(node);
           }
         });
@@ -59,6 +60,7 @@ module.exports = {
             )
           ).length > 0;
 
+        console.log(imgNodes);
         if (!hasHighFetchPriorityAttribute && imgNodes.length > 0) {
           context.report({
             node: {
