@@ -45,7 +45,6 @@ module.exports = {
     return {
       Program(node) {
         travelNode(node.body, (node) => {
-          console.log(node);
           if (node.type === "Tag" && node.name === "img") {
             imgNodes.push(node);
           }
@@ -60,7 +59,6 @@ module.exports = {
             )
           ).length > 0;
 
-        console.log(imgNodes, "***");
         if (!hasHighFetchPriorityAttribute && imgNodes.length > 0) {
           context.report({
             node: {
@@ -84,6 +82,7 @@ module.exports = {
 function travelNode(node, callback) {
   callback(node);
 
+  console.log("object");
   if (node.children && node.children.length) {
     console.log(node.children.length, node.children[0]);
     node.children.forEach((child) => travelNode(child, callback));
