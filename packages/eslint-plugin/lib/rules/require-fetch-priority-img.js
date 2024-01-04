@@ -44,9 +44,10 @@ module.exports = {
 
     return {
       Program(node) {
+        console.log(node.body, "****");
         travelNode(node.body, (node) => {
+          console.log(node);
           if (node.type === "Tag" && node.name === "img") {
-            console.log(node);
             imgNodes.push(node);
           }
         });

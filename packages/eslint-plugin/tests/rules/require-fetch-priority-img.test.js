@@ -7,101 +7,40 @@ ruleTester.run("require-fetch-priority-img", rule, {
   valid: [
     {
       code: `
-<img src="./image.png" alt="image description"/>
-`,
-    },
-    {
-      code: `
-<img src="./image.png" [alt]="image description"/>
-`,
-      options: [
-        {
-          substitute: ["[alt]"],
-        },
-      ],
-    },
-    {
-      code: `
-<img src="./image.png" [attr.alt]="image description"/>
-`,
-      options: [
-        {
-          substitute: ["[alt]", "[attr.alt]"],
-        },
-      ],
-    },
-    {
-      code: `
-<html>
-  <body>
-    <img src="./image.png" alt="image description">
-  </body>
-</html>
-`,
-    },
-    {
-      code: `
-<html>
-  <body>
-    <img src="./image.png" alt="">
-  </body>
-</html>
-`,
-    },
-  ],
-  invalid: [
-    {
-      code: `
-<img src="./image.png"/>
-`,
-
-      errors: [
-        {
-          messageId: "missingAlt",
-        },
-      ],
-    },
-    {
-      code: `
-<html>
-  <body>
-    <img src="./image.png">
-  </body>
-</html>
-`,
-
-      errors: [
-        {
-          messageId: "missingAlt",
-          line: 4,
-          column: 5,
-          endColumn: 28,
-          endLine: 4,
-        },
-      ],
-    },
-    {
-      code: `
-<html>
-  <body>
-    <img src="./image.png">
-  </body>
-</html>
-`,
-      options: [
-        {
-          substitute: ["[alt]"],
-        },
-      ],
-      errors: [
-        {
-          messageId: "missingAlt",
-          line: 4,
-          column: 5,
-          endColumn: 28,
-          endLine: 4,
-        },
-      ],
+      <!DOCTYPE html>
+      <html lang="en">
+      
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+      </head>
+      
+      <style>
+          .a {
+              color: red;
+          }
+      
+          .b {
+              color: blue
+          }
+      </style>
+      
+      <body>
+          <img alt="ss" height="2" width="23">
+          <img alt="ss" height="2" width="23">
+          <img alt="ss" height="1" width="12">
+      </body>
+      
+      <script>
+          let a = 5;
+          a = a + 1;
+          console.log(a);
+      </script>
+      
+      </html>
+      
+      `,
     },
   ],
 });
