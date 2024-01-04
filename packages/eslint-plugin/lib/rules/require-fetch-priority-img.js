@@ -44,7 +44,7 @@ module.exports = {
 
     return {
       Program(node) {
-        travelNode(node, (node) => {
+        travelNode(node.body, (node) => {
           if (node.type === "Tag" && node.name === "img") {
             imgNodes.push(node);
           }
@@ -81,8 +81,6 @@ module.exports = {
 
 function travelNode(node, callback) {
   callback(node);
-
-  console.log(node, "****");
 
   if (node.children && node.children.length) {
     console.log(node);
