@@ -74,9 +74,9 @@ module.exports = {
               },
               messageId: MESSAGE_IDS.WARNING_USE_FETCH_PRIORITY,
             });
-          }
 
-          isFirstImgTag = false;
+            isFirstImgTag = false;
+          }
         });
       },
     };
