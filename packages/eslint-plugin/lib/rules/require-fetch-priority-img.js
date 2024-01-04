@@ -41,11 +41,14 @@ module.exports = {
 
   create(context) {
     const imgNodes = [];
+    let isFirstImgTag = true;
+
     return {
       Tag(node) {
         if (node.name !== "img") {
           return;
         }
+
         imgNodes.push(node);
         const hasHighFetchPriorityAttribute =
           imgNodes.filter((imgNode) =>
@@ -56,7 +59,7 @@ module.exports = {
             )
           ).length > 0;
 
-        if (!hasHighFetchPriorityAttribute) {
+        if (!hasHighFetchPriorityAttribute && isFirstImgTag) {
           context.report({
             node: {
               loc: {
@@ -71,6 +74,8 @@ module.exports = {
             messageId: MESSAGE_IDS.WARNING_USE_FETCH_PRIORITY,
           });
         }
+
+        isFirstImgTag = false;
       },
     };
   },
