@@ -63,10 +63,9 @@ module.exports = {
           }
         });
 
-        console.log(imgNodes);
         const hasManyHighFetchPriority = imgNodes.length > 1;
 
-        if (!hasManyHighFetchPriority) {
+        if (hasManyHighFetchPriority) {
           context.report({
             node: {
               loc: {
