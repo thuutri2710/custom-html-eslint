@@ -51,6 +51,7 @@ module.exports = {
         travelNode(htmlNode, (node) => {
           if (node.type === "Tag" && node.name === "img") {
             // add img node which has fetchPriority attribute is high
+            console.log(node, "***************");
             if (
               node.attributes.find(
                 (attr) =>
@@ -58,6 +59,7 @@ module.exports = {
                   attr.value.value === "high"
               )
             ) {
+              console.log(node);
               imgNodes.push(node);
             }
           }
