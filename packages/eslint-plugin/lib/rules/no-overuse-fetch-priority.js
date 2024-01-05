@@ -2,7 +2,7 @@ const { RULE_CATEGORY } = require("../constants");
 
 const MESSAGE_IDS = {
   WARNING_USE_FETCH_PRIORITY:
-    "Consider use `fetchPriority=true` for img element if it's largest in page",
+    "Consider when using `fetchPriority=high` many times. It's unnecessary",
 };
 
 /**
@@ -14,7 +14,7 @@ module.exports = {
 
     docs: {
       description:
-        "Consider use `fetchPriority=true` for img element if it's largest in viewport of page. The `fetchPriority` attribute is used to indicate that the element should be fetched with high priority.",
+        "Consider use `fetchPriority=true` for img element if it's largest in viewport of page. Avoid using `fetchPriority=high` many times. The `fetchPriority` attribute is used to indicate that the element should be fetched with high priority.",
       category: RULE_CATEGORY.BEST_PRACTICE,
       recommended: true,
     },
@@ -35,7 +35,7 @@ module.exports = {
     ],
     messages: {
       [MESSAGE_IDS.WARNING_USE_FETCH_PRIORITY]:
-        "Consider use `fetchPriority=true` for img element if it's largest in page",
+        "Consider when using `fetchPriority=high` many times. It's unnecessary",
     },
   },
 
@@ -50,20 +50,22 @@ module.exports = {
 
         travelNode(htmlNode, (node) => {
           if (node.type === "Tag" && node.name === "img") {
-            imgNodes.push(node);
+            // add img node which has fetchPriority attribute is high
+            if (
+              node.attributes.find(
+                (attr) =>
+                  attr.key.value === "fetchPriority" &&
+                  attr.value.value === "high"
+              )
+            ) {
+              imgNodes.push(node);
+            }
           }
         });
 
-        const hasHighFetchPriorityAttribute =
-          imgNodes.filter((imgNode) =>
-            imgNode.attributes.find(
-              (attr) =>
-                attr.key.value === "fetchPriority" &&
-                attr.value.value === "high"
-            )
-          ).length > 0;
+        const hasManyHighFetchPriority = imgNodes.length > 1;
 
-        if (!hasHighFetchPriorityAttribute && imgNodes.length > 0) {
+        if (!hasManyHighFetchPriority) {
           context.report({
             node: {
               loc: {
